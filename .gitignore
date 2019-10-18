@@ -1,8 +1,8 @@
 # Config and Htaccess Files
 /www/2.3/upload/.htaccess
 /www/3.0/upload/.htaccess
-#/upload/config.php
-#/upload/admin/config.php
+/www/2.3/upload/config.php
+/www/3.0/upload/admin/config.php
 
 # Image File
 !/www/2.3/upload/image/no_image.jpg
