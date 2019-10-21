@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 1
 echo "start plugins symbolic link to the container"
 docker exec nginx-opencart bash -c "ln -sf /var/www/html/plugin/2.3/upload/admin/controller/extension/payment/rakuten.php /var/www/html/2.3/upload/admin/controller/extension/payment/"
 docker exec nginx-opencart bash -c "ln -sf /var/www/html/plugin/2.3/upload/admin/controller/extension/payment/rakuten_boleto.php /var/www/html/2.3/upload/admin/controller/extension/payment/"

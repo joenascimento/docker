@@ -437,7 +437,7 @@ CREATE TABLE `oc23_cart` (
   `date_added` datetime NOT NULL,
   PRIMARY KEY (`cart_id`),
   KEY `cart_id` (`api_id`,`customer_id`,`session_id`,`product_id`,`recurring_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -446,7 +446,7 @@ CREATE TABLE `oc23_cart` (
 
 LOCK TABLES `oc23_cart` WRITE;
 /*!40000 ALTER TABLE `oc23_cart` DISABLE KEYS */;
-INSERT INTO `oc23_cart` VALUES (1,0,0,'06554ab47f095344f2376be2141c62d5',40,0,'[]',1,'2019-10-18 19:35:38');
+INSERT INTO `oc23_cart` VALUES (2,0,0,'06554ab47f095344f2376be2141c62d5',40,0,'[]',2,'2019-10-21 18:40:59');
 /*!40000 ALTER TABLE `oc23_cart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -803,7 +803,7 @@ CREATE TABLE `oc23_custom_field` (
 
 LOCK TABLES `oc23_custom_field` WRITE;
 /*!40000 ALTER TABLE `oc23_custom_field` DISABLE KEYS */;
-INSERT INTO `oc23_custom_field` VALUES (2,'text','','','account',1,3),(4,'text','','','account',1,4),(6,'text','','','address',1,4),(8,'text','','','address',1,5),(10,'text','','','address',1,6);
+INSERT INTO `oc23_custom_field` VALUES (2,'text','','','account',1,3),(4,'date','','','account',1,4),(6,'text','','','address',1,3),(8,'text','','','address',1,4),(10,'text','','','address',1,5);
 /*!40000 ALTER TABLE `oc23_custom_field` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3709,4 +3709,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-18 19:43:19
+-- Dump completed on 2019-10-21 18:52:32
