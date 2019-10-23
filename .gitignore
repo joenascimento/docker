@@ -7,7 +7,7 @@
 # Image File
 !/www/2.3/upload/image/no_image.jpg
 !/www/3.0/upload/image/no_image.jpg
-
+/www/2.3/upload/image/catalog/produto-teste.png
 # Image Cache Files
 /www/2.3/upload/image/cache/*
 /www/3.0/upload/image/cache/*
@@ -50,6 +50,7 @@
 
 # Log Files
 /www/2.3/upload/system/storage/logs/*
+/www/2.3/upload/rakuten.log
 /www/3.0/upload/system/storage/logs/*
 !/www/2.3/upload/system/storage/logs/index.html
 !/www/3.0/upload/system/storage/logs/index.html

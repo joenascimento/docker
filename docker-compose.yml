@@ -14,11 +14,11 @@ services:
             - frontend
         ports:
             - "80:80"
-        volumes:
-             - ./www:/var/www/html
-             - ../plugin:/var/www/html/plugin
-             - ./nginx.conf:/etc/nginx/nginx.conf
-             - ./opencart.conf:/etc/nginx/conf.d/opencart.conf
+        volumes: &app
+            - ./www:/var/www/html:delegated
+            - ../plugin:/var/www/html/plugin:delegated
+            - ./nginx.conf:/etc/nginx/nginx.conf
+            - ./opencart.conf:/etc/nginx/conf.d/opencart.conf
         container_name: "nginx-opencart"
 
     php:
@@ -26,11 +26,7 @@ services:
             context: './php'
         networks:
             - backend
-        volumes:
-             - ./www:/var/www/html
-             - ../plugin:/var/www/html/plugin
-             - ./nginx.conf:/etc/nginx/nginx.conf
-             - ./opencart.conf:/etc/nginx/conf.d/opencart.conf
+        volumes: *app
         container_name: "php-opencart"
 
     db:
