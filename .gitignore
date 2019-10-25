@@ -73,3 +73,6 @@
 
 # mysql database
 /mysql
+
+# phpMyAdmin
+/www/phpmyadmin
