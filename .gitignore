@@ -14,50 +14,15 @@
 !/www/2.3/upload/image/cache/index.html
 !/www/3.0/upload/image/cache/index.html
 
-# System Cache Files
-/www/2.3/upload/system/storage/cache/*
-/www/3.0/upload/system/storage/cache/*
-!/www/2.3/upload/system/storage/cache/index.html
-!/www/3.0/upload/system/storage/cache/index.html
-
-# Modification Files
-/www/2.3/upload/system/storage/modification/*
-/www/3.0/upload/system/storage/modification/*
-!/www/2.3/upload/system/storage/modification/index.html
-!/www/3.0/upload/system/storage/modification/index.html
-
-# Templates Files
-/www/2.3/upload/image/templates/*
-/www/3.0/upload/image/templates/*
-/www/2.3/upload/image/templates/default.jpg
-/www/3.0/upload/image/templates/default.jpg
-
-# Download Files
-/www/2.3/upload/system/storage/download/*
-/www/3.0/upload/system/storage/download/*
-!/www/2.3/upload/system/storage/download/index.html
-!/www/3.0/upload/system/storage/download/index.html
-
-# Upload Files
-/www/2.3/upload/system/storage/upload/*
-/www/3.0/upload/system/storage/upload/*
-!/www/2.3/upload/system/storage/upload/index.html
-!//www/3.0upload/system/storage/upload/index.html
-
-# Flags
-# remove sharp char if you want to add flags to gitignore
-# /upload/flags/*
-
-# Log Files
-/www/2.3/upload/system/storage/logs/*
+/www/2.3/upload/admin/*
+/www/2.3/upload/catalog/*
+/www/2.3/upload/image/*
+/www/2.3/upload/system/*
 /www/2.3/upload/rakuten.log
-/www/3.0/upload/system/storage/logs/*
-!/www/2.3/upload/system/storage/logs/index.html
-!/www/3.0/upload/system/storage/logs/index.html
-
-# If you want to ignore install file use following lines [on development mode]
-# /upload/backup.install/*
-# /upload/install/*
+/www/3.0/upload/admin/
+/www/3.0/upload/catalog/
+/www/3.0/upload/image/
+/www/3.0/system/
 
 # Ignore all vendor files included by composer and the lock file
 /www/2.3/tests/phpunit/vendor/*
